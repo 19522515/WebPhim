@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slickslider.css">
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
+    <title>PhimFullHD.com</title>
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="container">
+                <div class="header__main">
+                    <a class="header__logo" href="index.html">
+                        <img src="https://img.icons8.com/doodle/452/sharechat.png" class="header__logo-img">
+                        <span>PhimFullHD</span>
+                    </a>
+
+                    <ul class="header__menu">
+                        <div class="header__search">
+                            <input class="header__search-box" type="search" id="search" placeholder="Search..." />
+                            <button class="header__search-btn">
+                                <i class='bx bx-search-alt-2'></i>
+                            </button>
+                        </div>
+
+                        <li class="header__menu-item header__menu-item--sub">
+                            <a class="header__menu-link" href="">Thể Loại<i class='bx bx-chevron-down'></i></a>
+                            <nav class="header__category">
+                                <ul class="header__category-list">
+
+                                </ul>
+                            </nav>
+                        </li>
+                        <li class="header__menu-item header__menu-item--sub">
+                            <a class="header__menu-link" href="">Phim Bộ<i class='bx bx-chevron-down'></i></a>
+                            <nav class="header__category">
+                                <ul class="header__category-list">
+
+                                </ul>
+                            </nav>
+                        </li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="">Phim Mới</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="">Phim Chiếu Rạp</a></li>
+                    </ul>
+                    <a class="btn btn--mobie" href=""><i class='bx bx-menu'></i></a>
+                </div>
+            </div>
+        </header>
+
+        <section class="slider">
+            <a href="http"><img src="https://photo-cms-nghenhinvietnam.zadn.vn/Uploaded/trunghieu/2021_03_10/nowayhome_1__KWFF.jpg" alt="" class="slider__img"></a>
+            <a href="http://"><img src="https://lh6.googleusercontent.com/qG7pbRXJk2DB3Ej3GeZQZkNaju1tg4G0fm6mGnVATFLi-IeYD5oSxKJ9IpZLEPMfdjI" alt="" class="slider__img"></a>
+            <a href="http://"><img src="https://bloganchoi.com/wp-content/uploads/2020/12/alice-in-borderland.jpg" alt="" class="slider__img"></a>
+            <a href="http://"><img src="https://image-us.24h.com.vn/upload/1-2021/images/2021-03-17/Phim-dien-anh-co-trang-Kieu-quyet-dinh-khoi-chieu-som-hon-du-dinh-160478179_304601597665696_5876061954509923781_o-1615968747-956-width2048height1476.jpg" alt="" class="slider__img"></a>
+        </section>
+
+        <main class="content mt">
+            <div class="container">
+                <div class="movie">
+
+                    <div class="movie__main">
+                        <div class="movie__heading">
+                            <h2 class="movie__heading-title"><span>T</span>ất cả phim</h2>
+                            <div class="movie__heading-option">
+                                <a href="http://" class="ml btn btn--primary btn--rounded">Phim Lẻ</a>
+                                <a href="http://" class="ml btn btn--primary btn--rounded">Phim Bộ</a>
+                                <a href="http://" class="ml btn btn--primary btn--rounded">Phim Chiếu Rạp</a>
+                            </div>
+                        </div>
+
+                        <ul id="all-movies" class="movie__list">
+                        </ul>
+                        <!-- <div>
+                            <div>
+                                <label for="">Thumbnail</label>
+                                <input type="text" name="thumbnail" placeholder="URL">
+                            </div>
+                            <div>
+                                <label for="">Category</label>
+                                <input type="text" name="category" placeholder="Enter category">
+                            </div>
+                            <div>
+                                <label for="">Name Movie</label>
+                                <input type="text" name="name" placeholder="Enter name movie">
+                            </div>
+                            <div>
+                                <label for="">evaluate</label>
+                                <input type="text" name="evaluate" placeholder="URL">
+                            </div>
+                            <button class="btn btn-primary btn-create">Create</button>
+                            <button class="btn btn-primary btn-save">Save</button>
+                        </div> -->
+                        <span class="movie__more">Xem Thêm <i class='bx bx-chevrons-right'></i></span>
+
+                        <h2 class="movie__heading-title"><span>P</span>him Bộ Mới</h2>
+                        <ul id="all-movies" class="movie__list">
+
+                        </ul>
+                        <span class="movie__more">Xem Thêm <i class='bx bx-chevrons-right'></i></span>
+
+                        <h2 class="movie__heading-title"><span>P</span>him Lẻ Mới</h2>
+                        <ul class="movie__list">
+                        </ul>
+                        <span class="movie__more">Xem Thêm <i class='bx bx-chevrons-right'></i></span>
+
+                        <h2 class="movie__heading-title"><span>P</span>him Hoạt Hình</h2>
+                        <ul class="movie__list">
+                        </ul>
+                        <span class="movie__more">Xem Thêm <i class='bx bx-chevrons-right'></i></span>
+                    </div>
+
+                    <div class="bar">
+                        <h3 class="bar__title">Xem Nhiều Nhất</h3>
+                        <ul class="bar__list">
+
+                        </ul>
+
+                        <h3 class="bar__title mt">Phim Bộ Hot</h3>
+                        <ul class="bar__list">
+
+                        </ul>
+                        <h3 class="bar__title mt">Gợi ý phim hay</h3>
+                        <div class="bar__tag">
+                            <a class="bar__tag-link" href="">#Naruto</a>
+                            <a class="bar__tag-link" href="">#Cung Tâm Kế</a>
+                            <a class="bar__tag-link" href="">#Tam Quốc Chí</a>
+                            <a class="bar__tag-link" href="">#Đánh Mất Em</a>
+                            <a class="bar__tag-link" href="">#Võ luyện đỉnh phong</a>
+                            <a class="bar__tag-link" href="">#Ta luyện thể 4000 tầng</a>
+                            <a class="bar__tag-link" href="">#Tầng lớp thượng lưu</a>
+                            <a class="bar__tag-link" href="">#Vua hải tặc</a>
+                            <a class="bar__tag-link" href="">#Robot hủy diệt</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/viethappy/" class="footer__social-item"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="https://www.instagram.com/khanh__viet/" class="footer__social-item"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="https://www.youtube.com/watch?v=ULP4zFh6IHM&list=RDULP4zFh6IHM&start_radio=1&ab_channel=Scamper" class="footer__social-item"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://twitter.com/" class="footer__social-item"><i class='bx bxl-twitter' ></i></a>
+                </div>
+                <div class="footer__inner mt" >
+                    <div class="footer__contact">
+                        <b class="footer__contact-category">Liên Hệ</b>
+                        <hr>
+                        <ul class="footer__contact-desc">
+                            <li class="footer__contact-item"><a class="footer__contact-link" href="">ldkviet@gmail.com</a></li>
+                            <li class="footer__contact-item"><a class="footer__contact-link" href="">0926828605</a></li>
+                            <li class="footer__contact-item"><a class="footer__contact-link" href="">UIT Đại học Công Nghệ Thông Tin</a></li>
+                            <li class="footer__contact-item"><a class="footer__contact-link" href="">FB: facebook.com/viethappy/</a></li>
+                       </ul>
+                    </div>
+
+                </div>
+                <hr>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/slider.js"></script>
+    <script type="module" src="./js/mains.js"></script>
+</body>
+
+</html>
